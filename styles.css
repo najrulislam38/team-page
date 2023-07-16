@@ -67,21 +67,50 @@ section{
     width: 100%;
 }
 
-.down-image{
+.down-image-full{
     margin-top: 100px;
 }
 
 .profession{
-    font-size: 18px;
+    font-size: 10px;
     font-family: 'PT Serif', serif;
     text-transform: uppercase;
     position: absolute;
-    top: 80px;
-    right: -50px;
+    top: 70px;
+    right: -20px;
     transform: rotate(90deg);
 
 }
 
-.profession:first-of-type{
-    right: -60px;
+
+/* Responsive styles */
+@media screen and (max-width: 576px) {
+    .team-content{
+        flex-direction: column;
+    }
+
+    .who-we-are{
+        width: 100%;
+    }
+
+    .team-member-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .team-member {
+        padding: 0px 20px;
+    }
+
+    .down-image-full{
+        margin-top: 0;
+    }
+
+    .down-image-small{
+        margin-top: 100px;
+    }
+
+    .profession{
+        right: -30px;
+    }
 }
