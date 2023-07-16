@@ -60,6 +60,7 @@ section{
 
 .team-member {
     padding: 40px 30px;
+    position: relative;
 } 
 
 .team-member img{
@@ -68,4 +69,19 @@ section{
 
 .down-image{
     margin-top: 100px;
+}
+
+.profession{
+    font-size: 18px;
+    font-family: 'PT Serif', serif;
+    text-transform: uppercase;
+    position: absolute;
+    top: 80px;
+    right: -50px;
+    transform: rotate(90deg);
+
+}
+
+.profession:first-of-type{
+    right: -60px;
 }
